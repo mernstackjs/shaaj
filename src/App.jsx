@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, Route, Routes } from "react-router-dom";
 import Details from "./Details";
+import MyReservation from "./myreservation";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
         <Route path="/login" element={<div>Home Login</div>} />
         <Route path="/content" element={<div>Home Content</div>} />
         <Route path="/details/:id/:name" element={<Details />} />
+        <Route path="/my-reservation/:id/:email" element={<MyReservation />} />
       </Routes>
     </div>
   );
